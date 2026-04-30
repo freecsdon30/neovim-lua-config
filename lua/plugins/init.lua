@@ -9,7 +9,6 @@ end ---@diagnostic disable-next-line: undefined-field
 
 vim.opt.rtp:prepend(lazypath)
 
-
 require("lazy").setup({
 	"tpope/vim-sleuth",
 	-- {
@@ -27,7 +26,7 @@ require("lazy").setup({
 		"tmillr/sos.nvim",
 		config = function()
 			require("sos").setup({
-				enabled = true,
+				enabled = false,
 				timeout = 10000,
 				create_parent_dirs = true,
 				autowrite = true,

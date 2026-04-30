@@ -1,6 +1,0 @@
-{
-  "local_pg": {
-    "url": "postgres://root:root@localhost:5432/satingest"
-  }
-}
-
