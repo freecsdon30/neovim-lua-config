@@ -8,4 +8,12 @@ vim.g.have_nerd_font = true
 require("config.options")
 require("config.keymaps")
 require("config.autocmds")
-require("plugins")
+require("config.lazy")
+
+require("telescope").setup({
+	defaults = {
+		preview = {
+			treesitter = false,
+		},
+	},
+})
