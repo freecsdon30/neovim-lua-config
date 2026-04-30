@@ -11,48 +11,17 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	"tpope/vim-sleuth",
-	-- {
-	-- 	"rmagatti/auto-session",
-	-- 	lazy = false,
-	-- 	---@module "auto-session"
-	-- 	---@type AutoSession.Config
-	-- 	opts = {
-	-- 		suppressed_dirs = { "~/", "~/downloads", "/" },
-	-- 	},
-	-- },
+	{
+		"rmagatti/auto-session",
+		lazy = false,
+		---@module "auto-session"
+		---@type AutoSession.Config
+		opts = {
+			suppressed_dirs = { "~/", "~/downloads", "/" },
+		},
+	},
 	{ "sindrets/diffview.nvim" }, -- Diff View for Git
 	{ "williamboman/mason.nvim", config = true },
-	{
-		"tmillr/sos.nvim",
-		config = function()
-			require("sos").setup({
-				enabled = false,
-				timeout = 10000,
-				create_parent_dirs = true,
-				autowrite = true,
-				save_on_cmd = "all",
-				save_on_bufleave = true,
-				save_on_focuslost = true,
-
-				should_save = {
-					unmodifiable = true,
-					acwrite = {
-						net = true,
-						git = true,
-						compress = true,
-						---acwrite criteria/filters.
-						other = true,
-
-						schemes = {
-							octo = false,
-							term = false,
-							file = true,
-						},
-					},
-				},
-			})
-		end,
-	},
 	{ "neovim/nvim-lspconfig" },
 	{ "nvim-tree/nvim-web-devicons" },
 	{ "hrsh7th/nvim-cmp" },
