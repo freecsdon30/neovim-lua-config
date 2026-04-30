@@ -21,5 +21,5 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 vim.api.nvim_set_keymap("i", "(", "()<Left>", { noremap = true })
 vim.api.nvim_set_keymap("i", "[", "[]<Left>", { noremap = true })
 vim.api.nvim_set_keymap("i", "{", "{}<Left>", { noremap = true })
-vim.api.nvim_set_keymap("i", '"', '""<Left>', { noremap = true })
-vim.api.nvim_set_keymap("i", "'", "''<Left>", { noremap = true })
+--vim.api.nvim_set_keymap("i", '"', '""<Left>', { noremap = true })
+--vim.api.nvim_set_keymap("i", "'", "''<Left>", { noremap = true })
