@@ -1,17 +1,28 @@
 return {
 	{
-		"catppuccin/nvim",
+		url = "https://codeberg.org/evergarden/nvim.git",
+		name = "evergarden",
+		priority = 1000,
 		config = function()
-			require("catppuccin").setup({
-				flavour = "macchiato", -- options: macchiato, frappe, latte, mocha
-				background = {
-					dark = "macchiato", -- Adjust as needed
-					light = "latte", -- Adjust as needed
+			require("evergarden").setup({
+				theme = {
+					variant = "winter",
+					accent = "orange",
 				},
-				transparent_background = true,
-				term_colors = true,
+				editor = {
+					transparent_background = false,
+					sign = { color = "none" },
+					float = {
+						color = "mantle",
+						solid_border = false,
+					},
+					completion = {
+						color = "surface0",
+					},
+				},
 			})
-			vim.cmd("colorscheme catppuccin")
+
+			vim.cmd("colorscheme evergarden")
 		end,
 	},
 }
