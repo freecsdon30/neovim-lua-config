@@ -11,9 +11,11 @@ return {
 				groups = {
 					all = {
 						Normal = { bg = "#000000" },
+						NormalNC = { bg = "#000000" },
 						NormalFloat = { bg = "#000000" },
 						SignColumn = { bg = "#000000" },
 						EndOfBuffer = { bg = "#000000" },
+						ColorColumn = { bg = "#000000" },
 					},
 				},
 			})
