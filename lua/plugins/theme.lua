@@ -8,6 +8,14 @@ return {
 				options = {
 					transparent = false,
 				},
+				groups = {
+					all = {
+						Normal = { bg = "#000000" },
+						NormalFloat = { bg = "#000000" },
+						SignColumn = { bg = "#000000" },
+						EndOfBuffer = { bg = "#000000" },
+					},
+				},
 			})
 
 			vim.cmd("colorscheme github_dark")
