@@ -1,26 +1,15 @@
 return {
-	{
-		url = "https://github.com/projekt0n/github-nvim-theme",
-		name = "github-theme",
-		priority = 1000,
-		config = function()
-			require("github-theme").setup({
-				options = {
-					transparent = false,
-				},
-				groups = {
-					all = {
-						Normal = { bg = "#000000" },
-						NormalNC = { bg = "#000000" },
-						NormalFloat = { bg = "#000000" },
-						SignColumn = { bg = "#000000" },
-						EndOfBuffer = { bg = "#000000" },
-						ColorColumn = { bg = "#000000" },
-					},
-				},
-			})
-
-			vim.cmd("colorscheme github_dark")
-		end,
-	},
+	url = "https://github.com/skylarmb/torchlight.nvim.git",
+	branch = "main",
+	priority = 1000,
+	config = function()
+		require("torchlight").setup({
+			"skylarmb/torchlight.nvim",
+			lazy = false,
+			priority = 1000,
+			opts = {
+				contrast = "medium", -- possible values: soft, medium, hard, stark
+			},
+		})
+	end,
 }
